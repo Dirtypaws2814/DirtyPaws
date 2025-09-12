@@ -1,0 +1,267 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    color: #000;
+    background-color: #f3f0ff;
+    box-sizing: border-box;
+}
+
+/* ---- HEADER ---- */
+
+.header{
+    position: relative;
+    min-height: 80vh;
+    max-height: 80%;
+    width: 100%;
+    background-image: url(img/backgrown_overlay.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__overlay{
+    min-height: 80vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #b5c, #29a);
+    opacity: 0.6;
+    position: absolute;
+    z-index: 1;
+}
+
+.header__item-container{
+    text-align: center;
+    z-index: 2;
+}
+
+.header__img{
+    margin: 0;
+    min-width: 200px;
+    max-width: 50%;
+}
+
+.header__h1{
+    font-family: xplor;
+    font-size: 80px;
+    margin: 0;
+    color: #fff;
+}
+
+.header__p{
+    font-size: 18px;
+    font-weight: bold;
+    opacity: 0.8;
+    color: #fff;
+}
+
+/* ---- NAV ----*/
+
+.nav{
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 6px 20px;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 45px #0009;
+    z-index: 2;
+}
+
+#precios, #sobre-nosotros, #contacto {
+    scroll-margin-top: 90px; 
+}
+
+.nav__ul{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    gap: 0px;
+}
+
+.nav__ul-container{
+    flex-grow: 4;
+    text-align: center;
+}
+
+.nav__link{
+    color: #b5c;
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 10px;
+    border-radius: 0;
+    transition: border-radius 0.3s, outline 0.3s, outline-offset 0.3s;
+    margin: 2px;
+    outline: 0;
+    outline-offset: 0;
+    border: 2px solid #b5c;
+    border-radius: 50px;
+    background-color: #ddd;
+    white-space: nowrap;
+}
+
+.nav__link:hover{
+    border: 2px solid transparent;
+    border-radius: 20px;
+    outline: 2px solid #b5c;
+    outline-offset: -7px;
+}
+
+.nav__contact{
+    background-color: #29a;
+    border: 2px solid transparent;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.nav__contact:hover{
+    background-color: #178;
+    border: 2px solid transparent;
+    outline: none;
+}
+
+/* ---- MAIN ---- */
+
+.main{
+    text-align: center;
+}
+
+.main__tables--container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 70px;
+    row-gap: 5px;
+}
+
+.main__div--perro1, .main__div--perro2, .main__div--perro3{
+    position: relative;
+    display: inline-block;
+}
+
+.table__img--huella1, .table__img--huella2, .table__img--huella3{
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 20px;
+    height: auto;
+    pointer-events: none;
+    background-color: #178;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+.table__img--huella2{
+    width: 32px;
+}
+
+.table__img--huella3{
+    width: 45px;
+}
+
+.th__title{
+    font-size: 27px;
+    font-family: xplor;
+    color: #b5c;
+}
+
+
+table{
+    border-spacing: 12px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    min-width: 300px;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 0px 0px 35px #0007;
+    color: #178;
+    background-color: #f3f0ff;
+}
+
+td, th{
+    text-align: center;
+    padding: 6px;
+    padding-bottom: 9px;
+    font-family: sans-serif;
+    border-bottom: 1px solid #b5c;
+}
+
+td{
+    color: #29a;
+}
+
+/* ---- SOBRE NOSOTROS ---- */
+
+.sobre-nosotros {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3f0ff;
+    border-radius: 15px;
+    box-shadow: 0 0 25px #0008;
+    text-align: center;
+}
+
+.dirty_paws{
+    color: #b5c;
+}
+
+.sobre-nosotros h2 {
+    font-size: 36px;
+    color: #29a;
+    margin-bottom: 20px;
+}
+
+.sobre-nosotros p {
+    font-size: 20px;
+    line-height: 1.6;
+    color: #178;
+}
+
+/* ---- Contactanos ---- */
+
+.contacto {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f3f0ff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #0008;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: #178;
+}
+
+.contacto strong {
+    color: #29a;
+    font-size: 20px;
+}
+
+.contacto__numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.contacto__img{
+    max-width: 40px;
+}
+
+/* ---- FOOTER ---- */
+.footer {
+    background: linear-gradient(to top, #b5c, #29a);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+}
+
